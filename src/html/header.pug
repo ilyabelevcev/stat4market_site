@@ -1,2 +1,20 @@
 header.header#header 
-   div.container 
+   div.container.header-container
+      nav.header__nav 
+         div.header__nav-logo 
+            a.header__logo-link(href="#") 
+               img.link-img(src="", alt="stat4market")
+            div.header__logo-descr
+               span.descr-text Надежный сервис аналитики для поставщиков на маркетплейсы
+         ul.header__nav-list 
+            li.header__nav-item
+               a.item-link.link-analytics(href="#") Аналитика
+            li.header__nav-item
+               a.item-link.link-education(href="#") Обучение
+      div.header__phone
+         img.header__phone-icon(src="#", alt="Icon Phone")
+         a.header__phone-link(href="tel:84994503141") 8 (499) 450-31-41
+      div.header__login 
+         button.header__login-btn 
+            img.header__btn-icon(src="#", alt="Icon Login")
+            | Войти

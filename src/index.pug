@@ -3,6 +3,19 @@ html(lang="ru")
    include html/head
    body 
       include html/header 
-      main 
+      main
+         section.crumbs
+            div.container.crumbs-container 
+               ul.crumbs__list(style='display: flex;')
+                  li.crumbs__list-item
+                     a.item-link(href="#") Главная
+                  li.crumbs__list-item
+                     a.item-link(href="#") Обучение
+         section.hero 
+            div.container.hero-container
+         section.about 
+            div.container.about-container
+         section.offers
+            div.container.offers-container
       include html/footer 
       script(src="assets/js/app.min.js") 
