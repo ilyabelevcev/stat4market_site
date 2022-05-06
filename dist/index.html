@@ -15,7 +15,7 @@
   </head>
   <body> 
     <header class="header" id="header"> 
-      <div class="container header-container">
+      <div class="container header__container">
         <nav class="header__nav"> 
           <div class="header__nav-logo"> <a class="header__logo-link" href="#"> <img class="link-img" src="" alt="stat4market"></a>
             <div class="header__logo-descr"><span class="descr-text">Надежный сервис аналитики для поставщиков на маркетплейсы</span></div>
@@ -29,11 +29,17 @@
         <div class="header__login"> 
           <button class="header__login-btn"> <img class="header__btn-icon" src="#" alt="Icon Login">Войти</button>
         </div>
+        <div class="burger-nav">
+          <ul class="menu burger-list">
+            <li class="menu-item"><a class="item-link" href="#">Аналитика</a></li>
+            <li class="menu-item"><a class="item-link" href="#">Обучение</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <section class="crumbs">
-        <div class="container crumbs-container"> 
+        <div class="container crumbs__container"> 
           <ul class="crumbs__list" style="display: flex;">
             <li class="crumbs__list-item"><a class="item-link" href="#">Главная</a></li>
             <li class="crumbs__list-item"><a class="item-link" href="#">Обучение</a></li>
@@ -41,7 +47,7 @@
         </div>
       </section>
       <section class="hero"> 
-        <div class="container hero-container">
+        <div class="container hero__container">
           <div class="hero__info"> 
             <h1 class="hero__info-title"> <span>Обучающие курсы </span>для поставщиков на маркетплейсы</h1>
             <div class="hero__info-price">от <span class="price-number">19 900 </span>₽</div>
@@ -61,8 +67,8 @@
         </div>
       </section>
       <section class="about"> 
-        <div class="container about-container">
-          <h2 class="section-heading about-heading">Небольшая предыстория о том, почему нам можно доверять</h2>
+        <div class="container about__container">
+          <h2 class="section-heading about__heading">Небольшая предыстория о том, почему нам можно доверять</h2>
           <ul class="about__list">
             <li class="about__list-item_normal"><img class="item-img" src="" alt="Way to business">
               <p class="item-descr">Свой путь в бизнесе мы начали в 2016 г. У нас были свои островные магазины в крупных ТЦ Москвы («Европейский», «Метрополис», «Мега» и др.), а также свой интернет-магазин. Мы накопили большой опыт в продвижении своих товаров за счет многочисленных запусков разных рекламных каналов и работы с блогерами.</p>
@@ -76,13 +82,31 @@
           </ul>
         </div>
       </section>
-      <section class="offers">
-        <div class="container offers-container"></div>
+      <section class="education">
+        <div class="container education__container">
+          <h2 class="section-heading education__heading">Обучение по продажам на маркетплейсах от<span class="title-underline">stat<span class="color-insert">4</span>market</span></h2>
+          <p class="education__descr">«Увеличение реальной прибыли, конкретика и ключевые инструменты, которые дают результат» — на этом тезисе созданы наши курсы</p>
+          <ul class="education__cards-list">
+            <li class="education__list-item"> <img class="item-img" src="" alt="Target">
+              <h5 class="item-heading">Наше обучение построено очень лаконично и просто</h5>
+              <p class="item-content">Все занятия короткие по продолжительности для легкого восприятия и понимания. Мы даем в уроках только конкретику, без лишней теории и “воды”.</p>
+            </li>
+            <li class="education__list-item"> <img class="item-img" src="" alt="Site">
+              <h5 class="item-heading">Ко всем урокам есть дополнительные материалы</h5>
+              <p class="item-content">Презентации, краткие инструкции, чек-листы и памятки по работе с маркетплейсами.</p>
+            </li>
+            <li class="education__list-item"> <img class="item-img" src="" alt="Friends">
+              <h5 class="item-heading">Наше обучение — практико-ориентированное</h5>
+              <p class="item-content">Поэтому после прохождения уроков ты будешь выполнять задания, которые помогут тебе закрепить полученные знания на практике.</p>
+            </li>
+            <li class="education__list-item"> <img class="item-img" src="" alt="Icons">
+              <h5 class="item-heading">Создатели нашей Академии</h5>
+              <p class="item-content">Действующие селлеры с большим опытом в продажах на маркетплейсах, эксперты компании stat4market, а также профессиональные лекторы и методологи.</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer class="footer" id="footer">
-      <div class="container"> </div>
-    </footer>
     <script src="assets/js/app.min.js"> </script>
   </body>
 </html>
