@@ -6,7 +6,7 @@ html(lang="ru")
       main
          section.crumbs
             div.container.crumbs__container 
-               ul.crumbs__list(style='display: flex;')
+               ul.crumbs__list
                   li.crumbs__list-item
                      a.item-link(href="#") Главная
                   li.crumbs__list-item
@@ -15,57 +15,64 @@ html(lang="ru")
             div.container.hero__container
                div.hero__info 
                   h1.hero__info-title 
-                     span Обучающие курсы 
+                     span.color-insert Обучающие курсы 
                      | для поставщиков на маркетплейсы
                   div.hero__info-price
-                     | от 
-                     span.price-number 19 900 
-                     | ₽
+                     img.price-icon(src="@img/icons/purse-icon.svg", alt="Purse")
+                     div.price-number
+                        | от 
+                        span.color-insert 19 900 
+                        | ₽
                   ul.hero__info-descr 
                      li.descr-item
-                        p.item-link Обучающие курсы по работе и продвижению на маркетплейсах от практикующих селлеров
+                        p.item-text Обучающие курсы по работе и продвижению на маркетплейсах от практикующих селлеров
                      li.descr-item
-                        p.item-link Добро пожаловать в Академию. Это место для эффективного обучения, где мы рассказываем, как работают маркетплейсы и никогда не вдаемся в теорию, которая не понадобится на практике.
+                        p.item-text Добро пожаловать в Академию. Это место для эффективного обучения, где мы рассказываем, как работают маркетплейсы и никогда не вдаемся в теорию, которая не понадобится на практике.
                      li.descr-item
-                        p.item-link Нащи уроки помогут понять логику работы площадок и взять управление продажами в свои руки, а не действовать наугад. Становись экспертом в работе с маркетплейсами и увеличивай свою прибыль.
+                        p.item-text Нащи уроки помогут понять логику работы площадок и взять управление продажами в свои руки, а не действовать наугад. Становись экспертом в работе с маркетплейсами и увеличивай свою прибыль.
                div.hero__image 
-                  img(src="", alt="Superman")
+                  img.image-suprman(src="@img/superman.png", alt="Superman")
          section.about 
             div.container.about__container
                h2.section-heading.about__heading Небольшая предыстория о том, почему нам можно доверять
                ul.about__list
-                  li.about__list-item_normal
-                     img.item-img(src="", alt="Way to business")
-                     p.item-descr Свой путь в бизнесе мы начали в 2016 г. У нас были свои островные магазины в крупных ТЦ Москвы («Европейский», «Метрополис», «Мега» и др.), а также свой интернет-магазин. Мы накопили большой опыт в продвижении своих товаров за счет многочисленных запусков разных рекламных каналов и работы с блогерами.
-                  li.about__list-item_reverse
-                     img.item-img(src="", alt="Working with marketplaces")
-                     ul.item_reverse-list 
+                  li.about__list-item.item_normal
+                     img.item-img(src="@img/business.png", alt="Way to business")
+                     ul.list-descr.item_normal-list
+                        li.descr-item Свой путь в бизнесе мы начали в 2016 г. У нас были свои островные магазины в крупных ТЦ Москвы («Европейский», «Метрополис», «Мега» и др.), а также свой интернет-магазин. Мы накопили большой опыт в продвижении своих товаров за счет многочисленных запусков разных рекламных каналов и работы с блогерами.
+                  li.about__list-item.item_reverse
+                     img.item-img(src="@img/marketplace.png", alt="Working with marketplaces")
+                     ul.list-descr.item_reverse-list 
                         li.descr-item  Летом 2019 года мы вышли на маркетплейсы и после работы с ними в течение 2 месяцев приняли решение развивать только это направление. И не прогадали. Весь накопленный опыт мы направили на улучшение и продвижение наших брендов.
                         li.descr-item Пришло время поделится знаниями и лайфхаками, которые будут собраны и доступны в нашей Академии stat4market.
          section.education
             div.container.education__container
                h2.section-heading.education__heading
-                  | Обучение по продажам на маркетплейсах от
-                  span.title-underline
+                  | Обучение по продажам на маркетплейсах от 
+                  span.heading-underline
                      | stat
                      span.color-insert 4
                      | market
                p.education__descr «Увеличение реальной прибыли, конкретика и ключевые инструменты, которые дают результат» — на этом тезисе созданы наши курсы
                ul.education__cards-list
                   li.education__list-item 
-                     img.item-img(src="", alt="Target")
+                     div.item-img
+                        img.img-icon(src="@img/icons/target-icon.svg", alt="Target")
                      h5.item-heading Наше обучение построено очень лаконично и просто
                      p.item-content Все занятия короткие по продолжительности для легкого восприятия и понимания. Мы даем в уроках только конкретику, без лишней теории и “воды”.
                   li.education__list-item 
-                     img.item-img(src="", alt="Site")
+                     div.item-img
+                        img.img-icon(src="@img/icons/site-icon.svg", alt="Site")
                      h5.item-heading Ко всем урокам есть дополнительные материалы
                      p.item-content Презентации, краткие инструкции, чек-листы и памятки по работе с маркетплейсами.
                   li.education__list-item 
-                     img.item-img(src="", alt="Friends")
+                     div.item-img
+                        img.img-icon(src="@img/icons/friends-icon.svg", alt="Friends")
                      h5.item-heading Наше обучение — практико-ориентированное
                      p.item-content Поэтому после прохождения уроков ты будешь выполнять задания, которые помогут тебе закрепить полученные знания на практике.
                   li.education__list-item 
-                     img.item-img(src="", alt="Icons")
+                     div.item-img
+                        img.img-icon(src="@img/icons/icons-icon.svg", alt="Icons")
                      h5.item-heading Создатели нашей Академии
                      p.item-content Действующие селлеры с большим опытом в продажах на маркетплейсах, эксперты компании stat4market, а также профессиональные лекторы и методологи.
       script(src="assets/js/app.min.js") 

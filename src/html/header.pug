@@ -3,26 +3,35 @@ header.header#header
       nav.header__nav 
          div.header__nav-logo 
             a.header__logo-link(href="#") 
-               img.link-img(src="", alt="stat4market")
+               img.link-img(src="@img/icons/logo.svg", alt="stat4market")
             div.header__logo-descr
-               span.descr-text Надежный сервис аналитики для поставщиков на маркетплейсы
+               span.descr-text 
+                  | Надежный сервис
+                  br
+                  | аналитики для поставщиков
+                  br
+                  | а маркетплейсы
          ul.header__nav-list 
             li.header__nav-item
                a.item-link.link-analytics(href="#") Аналитика
             li.header__nav-item
                a.item-link.link-education(href="#") Обучение
       div.header__phone
-         img.header__phone-icon(src="#", alt="Icon Phone")
+         img.header__phone-icon(src="@img/icons/phone-icon.svg", alt="Icon Phone")
          a.header__phone-link(href="tel:84994503141") 8 (499) 450-31-41
       div.header__login 
          button.header__login-btn 
-            img.header__btn-icon(src="#", alt="Icon Login")
+            img.header__btn-icon(src="@img/icons/login-icon.svg", alt="Icon Login")
             | Войти
-      div.burger-nav
-         //- div.burger-logo
-         //-    a.logo-link(href="#") 
-         ul.menu.burger-list
-            li.menu-item
-               a.item-link(href="#") Аналитика
-            li.menu-item
-               a.item-link(href="#") Обучение
+      div.header__burger
+         div.burger-menu
+            span
+         div.burger-nav
+            //- div.burger-logo
+            //-    a.logo-link(href="#") 
+            //-       img.logo(src="", alt="")
+            ul.menu.burger-list
+               li.menu-item
+                  a.item-link(href="#") Аналитика
+               li.menu-item
+                  a.item-link(href="#") Обучение

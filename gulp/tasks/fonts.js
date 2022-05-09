@@ -42,7 +42,7 @@ export const ttfToWoff = () => {
 }
 export const fontsStyle = () => {
    // Файл стилей подключения шрифтов
-   let fontsFile = `${app.path.srcFolder}/sass/fonts.sass`;
+   let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
    // Проверяю существуют ли файлы шрифтов
    fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
       if (fontsFiles) {
@@ -76,13 +76,13 @@ export const fontsStyle = () => {
                   } else {
                      fontWeight = 400;
                   }
-                  fs.appendFile(fontsFile, `@font-face\n\tfont-family: ${fontName}\n\tfont-display: swap\n\tsrc: url("../assets/fonts/${fontFileName}.woff2") format("woff2"), url("../assets/fonts/${fontFileName}.woff") format("woff")\n\tfont-weight: ${fontWeight}\n\tfont-style: normal\r\n`, cb);
+                  fs.appendFile(fontsFile, `@font-face{\n\tfont-family: ${fontName};\n\tfont-display: swap;\n\tsrc: url("../assets/fonts/${fontFileName}.woff2") format("woff2"), url("../assets/fonts/${fontFileName}.woff") format("woff");\n\tfont-weight: ${fontWeight};\n\tfont-style: normal;}\r\n`, cb);
                   newFileOnly = fontFileName;
                }
             }
          } else {
             // Если файл есть, выводится сообщение
-            console.log("Файл sass/fonts.sass уже существует")
+            console.log("Файл scss/fonts.scss уже существует")
          }
       }
    });
